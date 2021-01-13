@@ -1,0 +1,10 @@
+# a sayisinin basamaklarini toplayan kod
+
+a= 2**1000
+b=0
+
+for i in range(len(str(a))):
+   c=str(a)
+   b+= int(c[i])
+
+print(b)
