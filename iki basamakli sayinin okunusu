@@ -1,0 +1,6 @@
+sayi=input(("iki basamakli bir sayi giriniz  "))
+
+birler=["bir","iki","uc","dort","bes","alti","yedi","sekiz","dokuz"]
+onlar=["on","yirmi","otuz","kirk","elli","altmis","yetmis","seksen","doksan"]
+
+print(" girdiginiz sayinin yazilisi {}{}".format(onlar[int(sayi[0])-1],birler[ int(sayi[1])-1 ] ))
