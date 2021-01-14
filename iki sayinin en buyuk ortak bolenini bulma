@@ -1,0 +1,12 @@
+sayi_1=int(input(("bir sayi giriniz  ")))
+sayi_2=int(input(("bir sayi daha giriniz  ")))
+
+liste = []
+
+
+for i in range (1, sayi_1+1):
+   if sayi_1%i == 0 and sayi_2%i==0:
+      liste.append(i)
+
+
+print (max(liste))
