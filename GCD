@@ -1,0 +1,25 @@
+# GCD ebob
+arr=[24,36,60,240]
+t=[]
+for b in range(len(arr)):
+    for i in range(2, arr[b]+1):
+        if arr[b]%i==0:
+            t.append(i)
+        else:
+            continue
+#         print(t)
+c=set()
+for x in t:
+    c.add(x)
+# print(c)
+k=[]
+for b in c:
+    x = t.count(b)
+    if x==len(arr):
+        k.append(b)
+    else:
+        pass
+if k==[]:
+    print("no ebob")
+else:
+    print(max(k))
