@@ -1,0 +1,24 @@
+#https://www.matematikciler.com/einsteinin-cozemedigi-soru/
+# Einstein bu soruya 3 yılını vermiş fakat çözememiş diye bir söylenti var. Bakalım siz çözebilecek misiniz?
+# İşte o soru: Eski zamanlarda bir yumurta tüccarı varmış. Yumurta toptancısına gidip bir miktar yumurta almak istemiş.
+# Toptancı ona ne kadar yumurta istediğini sormuş. O da cevaplamış:
+# Hmm ne kadar yumurta istediğimi tam olarak bilmiyorum ama 100’den fazla olacağı kesin.
+# Yumurtalarımı ikişer ikişer satarsam bana bir yumurta kalsın Yumurtalarımı üçer üçer satarsam
+# gene bana bir yumurta kalsın. Yumurtalarımı dörder dörder satınca da bana bir yumurta kalsın.
+# Beşer beşer altışar altışar yedişer yedişer sekizer sekizer dokuzar dokuzar onar onar satsam da
+# hep bana bir yumurta kalsın  Ama demiş onbirer onbirer satarsam bana yumurta kalmasına gerek yok!
+# Toptancı başlamış düşünmeye. Sizce yumurtacı toptancıdan en az kaç yumurta almak istemiş?
+# cevap 27731 cikiyor
+from math import gcd
+
+a=list(range(2,11))
+
+lcm = a[0]
+for i in a[1:]:
+    lcm = lcm*i//gcd(lcm, i)
+a=1
+while True:
+    a+=1
+    if a%(lcm+1)==0 and a%11==0:
+        print(a)
+        break
