@@ -3,4 +3,7 @@ a="14:20" # 01:30
 x=int((int(a[3:])/60)*360)
 y=int(a[:2])%12
 k=y*30+30*((int(a[3:])/60))
-print(abs(x-k))
+if abs(x-k)>180:
+  print(360-abs(x-k))
+else:
+  print(abs(x-k))
