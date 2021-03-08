@@ -1,0 +1,10 @@
+#girilen acilar tam sayi olacagi icin cogunlukla, buna karsilik gelen dakika degeri kusuratli cikiyor. Bunu ayrica saniye-saliseye cevirmeden,
+#tam degerini gostermeye calistim.    orn: "time is :   13 : 12.727272727272727 "
+
+
+a=int(input("Enter the angle: "))
+a=a%360
+
+for i in range(1,13):
+    v=(a+(i%12)*30)*2/11
+    print("time is :  ",i+12,":",(v%60))
